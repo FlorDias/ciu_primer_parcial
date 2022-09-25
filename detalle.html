@@ -29,19 +29,19 @@
                       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                           <li class="nav-item">
-                            <a class=" colorLetrasNav nav-link " href="index.html">Nosotros</a>
+                            <button type="button" class="boton btn btn-link" onclick="redirigirNosotros()">Nosotros</button>
                           </li>
                           <li class="nav-item">
                             <!--aca va opcion 1-->
-                            <a class="nav-link colorLetrasNav" href="menu.html">Menú</a>
+                            <button type="button" class="boton btn btn-link" onclick="redirigirMenu()">Menú</button>
                           </li>
                           <li class="nav-item">
                             <!--aca va opcion 2-->
-                            <a class="nav-link colorLetrasNav" href="detalle.html">Detalle</a>
+                            <button type="button" class="boton btn btn-link" onclick="redirigirDetalle()">Detalle</button>
                           </li>
                           <li class="nav-item">
                             <!--aca va opcion 3-->
-                            <a class="nav-link colorLetrasNav" href="contacto.html">Contacto</a>
+                            <button type="button" class="boton btn btn-link" onclick="redirigirContacto()">Contacto</button>
                           </li>
                         </ul>
                       </div>
@@ -51,6 +51,29 @@
         </section>
     </nav>
     </header>
+
+    <script type="text/javascript"> 
+      function cambiarModo() { 
+        var cuerpoweb = document.body; 
+        cuerpoweb.classList.toggle("oscuro"); 
+      } 
+
+      function redirigirNosotros(){
+        window.location.href ="index.html";
+      }
+
+      function redirigirMenu(){
+        window.location.href ="menu.html";
+      }
+
+      function redirigirDetalle(){
+        window.location.href ="detalle.html";
+      }
+
+      function redirigirContacto(){
+        window.location.href ="contacto.html";
+      }
+    </script>
 
     <main>
 
