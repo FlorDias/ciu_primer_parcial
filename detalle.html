@@ -59,11 +59,19 @@
       function cambiarModo() { 
         var cuerpoweb = document.body; 
         cuerpoweb.classList.toggle("oscuro");
-        cuerpoweb.classList.replace("table", "table-dark"); 
-        if (cuerpoweb.classList.contains("table")){
-          cuerpoweb.classList.remove("table");
-          cuerpoweb.classList.add("table-dark");
-        }
+        cuerpoweb.classList.replace("table", "table-dark");
+        const entrada = document.getElementById("entrada");
+        entrada.style.color = "white";
+        entrada.style.backgroundColor ="black";
+        const guarniciones = document.getElementById("guarniciones");
+        guarniciones.style.color = "white";
+        guarniciones.style.backgroundColor ="black";
+        const grillados = document.getElementById("grillados");
+        grillados.style.color = "white";
+        grillados.style.backgroundColor ="black";
+        const postre= document.getElementById("postres");
+        postre.style.color = "white";
+        postre.style.backgroundColor ="black";
 
       } 
 
@@ -89,8 +97,8 @@
       <section>
 
         <h3>Detalle</h3>
-        <article id = "entrada">
-          <table class="table">
+        <article>
+          <table id = entrada class="table">
             <thead>
               <tr>
                 <th scope="col">ENTRADAS</th>
@@ -130,8 +138,8 @@
           </table>
         </article>
 
-        <article id = "GUARNICIONES">
-          <table class="table">
+        <article>
+          <table  id = "guarniciones" class="table">
             <thead>
               <tr>
                 <th scope="col">GUARNICIONES & ENSALADAS</th>
@@ -170,8 +178,8 @@
           </table> 
         </article>
 
-        <article id = "GRILLADOS">
-          <table class="table">
+        <article>
+          <table  id = "grillados" class="table">
             <thead>
               <tr>
                 <th scope="col">GRILLADOS</th>
@@ -212,8 +220,8 @@
           </table> 
         </article>
 
-        <article id = "POSTRES">
-          <table class="table">
+        <article>
+          <table  id = "postres" class="table">
             <thead>
               <tr>
                 <th scope="col">POSTRES</th>
