@@ -58,7 +58,13 @@
     <script type="text/javascript"> 
       function cambiarModo() { 
         var cuerpoweb = document.body; 
-        cuerpoweb.classList.toggle("oscuro"); 
+        cuerpoweb.classList.toggle("oscuro");
+        cuerpoweb.classList.replace("table", "table-dark"); 
+        if (cuerpoweb.classList.contains("table")){
+          cuerpoweb.classList.remove("table");
+          cuerpoweb.classList.add("table-dark");
+        }
+
       } 
 
       function redirigirNosotros(){
@@ -86,7 +92,7 @@
         <article id = "entrada">
           <table class="table">
             <thead>
-              <tr class="table-default tabla">
+              <tr>
                 <th scope="col">ENTRADAS</th>
                 <th scope="col"> </th>
                 <th scope="col"> </th>
@@ -127,7 +133,7 @@
         <article id = "GUARNICIONES">
           <table class="table">
             <thead>
-              <tr class="table-default tabla">
+              <tr>
                 <th scope="col">GUARNICIONES & ENSALADAS</th>
                 <th scope="col"> </th>
                 <th scope="col"> </th>
@@ -167,7 +173,7 @@
         <article id = "GRILLADOS">
           <table class="table">
             <thead>
-              <tr class="table-default tabla">
+              <tr>
                 <th scope="col">GRILLADOS</th>
                 <th scope="col"> </th>
                 <th scope="col"> </th>
@@ -209,7 +215,7 @@
         <article id = "POSTRES">
           <table class="table">
             <thead>
-              <tr class="table-default tabla">
+              <tr>
                 <th scope="col">POSTRES</th>
                 <th scope="col"> </th>
                 <th scope="col"> </th>

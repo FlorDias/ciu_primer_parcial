@@ -103,26 +103,43 @@
                       <input type="password" class="form-control" id="apellido">
                     </div>
                     <div class="col-md-6">
-                        <label for="email" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="email">
+                      <label for="validationServer03" class="form-label">Correo electrónico</label>
+                      <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                      <div id="validationServer03Feedback" class="invalid-feedback">
+                        Proporcione una direccion valida.
+                      </div>
                     </div>
-                    <div class="col-md-6">
-                      <label for="num" class="form-label">Teléfono(Solo números):</label>
+                    <div class="col-md-3">
+                      <label for="validationServer04" class="form-label">Localidad</label>
+                      <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                        <option selected disabled value="">Seleccione...</option>
+                        <option>Palermo</option>
+                        <option>Ituzaingo</option>
+                        <option>Hurlingham</option>
+                      </select>
+                      <div id="validationServer04Feedback" class="invalid-feedback">
+                        Seleccione una localidad valida.
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="num" class="form-label">Teléfono:</label>
                       <input type="text" class="form-control" id="num">
                     </div>                       
                     <div class="col-12">
                         <label for="motivo" class="form-label">Motivo detallado de la consulta</label>
                         <textarea class="form-control" id="motivo" rows="3"></textarea>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="aceptoServicios">
-                        <label class="form-check-label" for="aceptoServicios">
-                          Acepto los términos de servicio 
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                        <label class="form-check-label" for="invalidCheck3">
+                          Acepto los terminos y condiciones
                         </label>
                         <div id="invalidCheck3Feedback" class="invalid-feedback">
-                          Debe estar de acuerdo antes de enviar.
+                          Debe estar de acuerdo antes de enviar
                         </div>
                       </div>
+                    </div>
                     <div class="col-12">
                         <a href="#" class="boton btn btn-outline-light">Enviar consulta</a></div>
                     </div>
